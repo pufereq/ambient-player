@@ -1,0 +1,28 @@
+# Ambient Player configuration file
+# This file is used to configure the Ambient Player
+
+# Time categories
+# Each category has a name, start time, and end time
+# The start and end times are in 24-hour format (HH:MM) - from 00:00 to 23:59
+# The player will play media files based on the current time
+time_categories:
+  - name: "Morning"
+    start_time: "06:00"
+    end_time: "12:00"
+  - name: "Afternoon"
+    start_time: "12:00"
+    end_time: "18:00"
+  - name: "Evening"
+    start_time: "18:00"
+    end_time: "23:59"
+  - name: "Night"
+    start_time: "00:00"
+    end_time: "06:00"
+  - name: "Random"
+    start_time: "00:00"
+    end_time: "23:59"
+
+
+# Time to wait before starting the next media file in seconds
+min_break_seconds: 600
+max_break_seconds: 1200
